@@ -1,0 +1,8 @@
+.custom-align-left {
+    text-align: left; /* Aligne le contenu à gauche */
+    display: block; /* Permet de contrôler l'alignement */
+}
+
+.custom-align-left img {
+    margin-left: 0; /* Assure que l'image colle au bord gauche */
+}

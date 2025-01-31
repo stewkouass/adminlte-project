@@ -1,0 +1,47 @@
+.custom-align-left {
+    text-align: left; /* Aligne le contenu à gauche */
+    display: block; /* Permet de contrôler l'alignement */
+}
+
+.custom-align-left img {
+    margin-left: 0; /* Assure que l'image colle au bord gauche */
+}
+
+.main-header {
+    background-color: #EAEFFF!important; /* Couleur de fond pour tout le header */
+}
+
+.navbar-static-top {
+    background-color: #EAEFFF!important; /* Couleur de fond pour la barre de navigation */
+    color: #ffffff; /* Couleur du texte */
+}
+
+.navbar-static-top a {
+    color: #ffffff; /* Couleur des liens dans la barre de navigation */
+}
+
+.navbar-static-top a:hover {
+    color: #FFD700; /* Couleur des liens au survol */
+}
+
+.logo {
+    background-color: #0B1332 !important; /* Couleur de fond */
+    /*color: #ffffff;  Couleur du texte ou du contenu (optionnel) */
+    /*padding: 10px; /* Ajoute un espace intérieur (optionnel) */
+    /*display: block; /* Assure que le logo occupe toute la largeur de son conteneur */
+    /*text-align: center; /* Centre le contenu horizontalement (optionnel) */
+}
+
+.sidebar {
+    background-color: #0B1332 !important; /* Couleur de fond */
+    /*color: #ffffff; /* Couleur du texte pour un bon contraste */
+    /*height: 100%; /* S'assure que la sidebar occupe toute la hauteur */
+    /*padding: 10px; /* Ajoute un espace intérieur (optionnel) */
+}
+
+.custom-header {
+    background-color: #0055fe17 !important;
+    color: #ffffff !important;
+}
+
+
