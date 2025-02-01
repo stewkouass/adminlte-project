@@ -9,6 +9,13 @@
 
 .main-header {
     background-color: #EAEFFF!important; /* Couleur de fond pour tout le header */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Ombre uniquement en bas */
+    /* fixer le menu du  haut*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030;
 }
 
 .navbar-static-top {
@@ -24,6 +31,8 @@
     color: #FFD700; /* Couleur des liens au survol */
 }
 
+/* -------------------------------changement de l'arrière plan du logo------------------------------------------ */
+
 .logo {
     background-color: #0B1332 !important; /* Couleur de fond */
     /*color: #ffffff;  Couleur du texte ou du contenu (optionnel) */
@@ -32,16 +41,66 @@
     /*text-align: center; /* Centre le contenu horizontalement (optionnel) */
 }
 
+/* -------------------------------changement de l'arriere plan de la sidebar i------------------------------------------ */
+
 .sidebar {
     background-color: #0B1332 !important; /* Couleur de fond */
-    /*color: #ffffff; /* Couleur du texte pour un bon contraste */
-    /*height: 100%; /* S'assure que la sidebar occupe toute la hauteur */
-    /*padding: 10px; /* Ajoute un espace intérieur (optionnel) */
+    position: fixed;
+    max-width: 230px; /* ajustez cette valeur pour obtenir la largeur désirée */
+    
+      
 }
 
+.sidebar-mini.sidebar-collapse {
+    transition: width 0.3s ease;
+  }
+
+/* Applique une couleur de fond uniquement au menu principal actif */
+.treeview.active > a {
+    background-color: #e4f0ff !important; /* Fond pêche ou toute autre couleur */
+    color: #000 !important; /* Facultatif : couleur du texte */
+    border-left: 5px solid #FF5733 !important; /* Facultatif : bordure gauche */
+}
+
+/* -------------------------------changement de l'arriere plan des titres de la sidebar-------------------------------------------- */
+/* Ajout de la classe speciale custom-header pour les titres */
 .custom-header {
     background-color: #0055fe17 !important;
     color: #ffffff !important;
 }
 
+/* -------------------------------changement des icones et elementde la navbar a droite--------------------------------------- */
 
+.navbar-custom-menu .fa-envelope-o {
+    color: #0B1332 !important; /* Applique la couleur sur l'enveloppe */
+}
+
+.navbar-custom-menu .fa-bell-o {
+    color: #0B1332 !important; /* Applique la couleur sur l'enveloppe */
+}
+
+.navbar-custom-menu .fa-flag-o{
+    color: #0B1332 !important; /* Applique la couleur sur l'enveloppe */
+
+}
+.navbar-custom-menu li > a[data-toggle="control-sidebar"] > .fa-gears {
+    color: #0B1332 !important; /* Applique la couleur uniquement ici */
+}
+
+.custom-username { /* ajout d'une classe spécial "custom-username" au nom de de l'utilisateur */
+    /* font-weight: bold; /* Rendre le texte plus visible */
+
+    color: #111724; /* Couleur bleue personnalisée */
+
+}
+
+/* -------------------------------changement du toogle dans le menu du haut--------------------------------------- */
+.sidebar-toggle {
+    color: #ec6565 !important; /* Couleur du texte */
+    padding: 10px; /* Espacement interne */
+    cursor: pointer; /* Curseur de la souris */
+}
+
+.sidebar-toggle:hover {
+    background-color: #0055fe13 !important; /* Couleur de fond au survol */
+}
